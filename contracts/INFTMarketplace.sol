@@ -1,0 +1,7 @@
+interface INFTMarketplace {
+    function getPrice() external view returns (uint256);
+
+    function available(uint256 _tokenId) external view returns (bool);
+
+    function purchase(uint256 _tokenId) external payable;
+}
